@@ -11,7 +11,7 @@ Sau bữa tối thân mật ăn uống rượu bét nhè, t với thằng thủ 
 <div align="center">
 <img src="https://i.ibb.co/GfDW4tRV/20260430-130011.jpg" alt="ca-tai-tuong" loading="lazy" style="width: 40%; height: auto; display: block; margin: 0 auto;">
 <br>
-<small style="display: block; margin-top: -5px;"><i><font color="#888">Cá tai tượng tại trạm dừng chân</font></i></small>
+<small style="display: block; margin-top: -15px;"><i><font color="#888">Cá tai tượng tại trạm dừng chân</font></i></small>
 </div>
 <br>
 <div align="center">
