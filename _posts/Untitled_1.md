@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lễ vu quy của Thắng ngày 1
+title: "Lễ vu quy của Thắng ngày 1"
 date: 2026-04-30
 ---
 Khác với dịp 30/4 - 1/5 mọi năm, năm nay t xuống Kiên Giang bê quả cho Thắng. Cũng nhờ vậy mà t có ý tưởng để làm bài nói 2, không phải bịa hoàn toàn. 
