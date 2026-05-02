@@ -21,5 +21,5 @@ Sau bữa tối thân mật ăn uống rượu bét nhè, t với thằng thủ 
 <div align="center">
 <img src="https://i.ibb.co/YFhjwsyK/20260430-181855-0.jpg" alt="Chú rể" loading="lazy" style="width: 50%; height: auto; display: block; margin: 0 auto;">
 <br>
-<small style="display: block; margin-top: -15px;><i><font color="#888">Chú rể</font></i></small>
+<small style="display: block; margin-top: -15px;"><i><font color="#888">Chú rể</font></i></small>
 </div>
