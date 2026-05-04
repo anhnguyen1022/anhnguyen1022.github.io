@@ -23,3 +23,16 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<style>
+  .post-link {
+    text-decoration: none; /* Mặc định không gạch chân */
+    transition: color 0.2s ease;
+  }
+
+  .post-link:hover {
+    text-decoration: underline; /* Hiện gạch chân khi di chuột vào */
+    text-decoration-thickness: 1px; /* Độ dày của nét gạch */
+    text-underline-offset: 2px; /* Khoảng cách giữa chữ và nét gạch */
+  }
+</style>
