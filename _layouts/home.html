@@ -5,15 +5,27 @@ layout: default
   .post-link {
     text-decoration: none !important;
     color: #0066cc;
-    font-size: 0.95em;
+    /* Giảm nhẹ xuống 0.9em và ép độ đậm về mức bình thường */
+    font-size: 0.9em !important; 
+    font-weight: 400 !important;
+    line-height: 1.5;
   }
+  
   .post-link:hover {
     text-decoration: underline !important;
     text-underline-offset: 1px !important;
     color: #0066cc;
   }
-</style>
 
+  /* Đảm bảo cột ngày tháng cũng đồng bộ */
+  .post-date {
+    flex: 0 0 110px; 
+    color: #555; 
+    font-family: monospace; 
+    font-size: 0.95em;
+    font-weight: 400;
+  }
+</style>
 
 <div class="home">
   {{ content }}
@@ -21,8 +33,9 @@ layout: default
   <ul class="post-list" style="list-style: none; padding: 0; margin-top: 20px;">
     {% for post in site.posts %}
     <li style="margin-bottom: 5px; display: flex; align-items: baseline;">
-      <!-- Cột ngày tháng: Dùng font chữ đơn cách (monospace) để luôn thẳng hàng -->
-      <span style="flex: 0 0 110px; color: #555; font-family: monospace; font-size: 0.95em;">
+      
+      <!-- Cột ngày tháng -->
+      <span class="post-date">
         {{ post.date | date: "%d %b, %Y" }}
       </span>
       
@@ -32,6 +45,7 @@ layout: default
           {{ post.title }}
         </a>
       </span>
+
     </li>
     {% endfor %}
   </ul>
