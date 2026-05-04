@@ -8,7 +8,8 @@ layout: default
   }
   .post-link:hover {
     text-decoration: underline !important;
-    text-underline-offset: 3px !important;
+    text-underline-offset: 2px !important;
+    color: #0066cc;
   }
 </style>
 
@@ -26,7 +27,7 @@ layout: default
       
       <!-- Cột tiêu đề -->
       <span style="flex: 1;">
-        <a href="{{ post.url | relative_url }}" style="color: #0066cc; text-decoration: none;">
+        <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title }}
         </a>
       </span>
