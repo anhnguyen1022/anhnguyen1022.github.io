@@ -5,7 +5,6 @@ layout: default
   .post-link {
     text-decoration: none !important;
     color: #0066cc;
-    /* Giảm nhẹ xuống 0.9em và ép độ đậm về mức bình thường */
     font-size: 0.9em !important; 
     font-weight: 400 !important;
     line-height: 1.5;
@@ -14,16 +13,25 @@ layout: default
   .post-link:hover {
     text-decoration: underline !important;
     text-underline-offset: 1px !important;
-    color: #0066cc;
   }
 
-  /* Đảm bảo cột ngày tháng cũng đồng bộ */
   .post-date {
+    /* Cố định độ rộng cột ngày */
     flex: 0 0 110px; 
     color: #555; 
     font-family: monospace; 
     font-size: 0.95em;
     font-weight: 400;
+    /* Ngăn ngày tháng bị xuống dòng trên màn hình nhỏ */
+    white-space: nowrap; 
+  }
+
+  .post-item {
+    display: flex; 
+    align-items: baseline; 
+    margin-bottom: 5px;
+    /* THÊM: Tạo khoảng cách cố định 15px giữa 2 cột */
+    column-gap: 15px; 
   }
 </style>
 
@@ -32,11 +40,11 @@ layout: default
 
   <ul class="post-list" style="list-style: none; padding: 0; margin-top: 20px;">
     {% for post in site.posts %}
-    <li style="margin-bottom: 5px; display: flex; align-items: baseline;">
+    <li class="post-item">
       
       <!-- Cột ngày tháng -->
       <span class="post-date">
-        {{ post.date | date: "%d %b, %Y" }}
+        {{ post.date | date: "%d/%b/%Y" }}
       </span>
       
       <!-- Cột tiêu đề -->
