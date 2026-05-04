@@ -4,41 +4,45 @@ seo:
   noindex: true
 ---
 <style>
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px; /* Thu hẹp khoảng cách với phần nội dung phía trên */
+  }
+
+  .post-item {
+    display: flex;
+    align-items: baseline;
+    /* Giảm margin-bottom xuống tối thiểu để các dòng sát nhau */
+    margin-bottom: 0px; 
+    column-gap: 15px;
+    /* Thêm một chút padding dọc nếu muốn kiểm soát độ sát chính xác hơn */
+    padding: 1px 0; 
+  }
+
+  .post-date {
+    flex: 0 0 100px; /* Thu hẹp độ rộng cột ngày một chút cho gọn */
+    color: #555;
+    font-family: monospace;
+    font-size: 1em; /* Bear Blog thường dùng size ngày nhỏ hơn tiêu đề một chút */
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
   .post-link {
     text-decoration: none !important;
     color: #0066cc;
-    font-size: 1em !important; 
+    font-size: 1em !important;
     font-weight: 400 !important;
-    line-height: 1; /* Giảm chiều cao dòng của tiêu đề */
+    /* CHI TIẾT QUAN TRỌNG: line-height thấp giúp các hàng sát nhau hơn */
+    line-height: 1.2 !important; 
+    display: inline-block;
   }
-  
+
   .post-link:hover {
     text-decoration: underline !important;
     color: #0066cc;
     text-underline-offset: 1px !important;
-  }
-
-  .post-date {
-    flex: 0 0 110px; 
-    color: #555; 
-    font-family: monospace; 
-    font-size: 1em;
-    font-weight: 400;
-    white-space: nowrap; 
-  }
-
-  .post-item {
-    display: flex; 
-    align-items: baseline; 
-    /* Chỉnh con số này nhỏ xuống (ví dụ 2px hoặc 0px) để các hàng sát nhau hơn */
-    margin-bottom: 2px; 
-    column-gap: 15px; 
-  }
-
-  .post-list {
-    list-style: none; 
-    padding: 0; 
-    margin-top: 15px; /* Khoảng cách giữa nội dung trên và danh sách bài viết */
   }
 </style>
 
@@ -48,17 +52,14 @@ seo:
   <ul class="post-list">
     {% for post in site.posts %}
     <li class="post-item">
-      
       <span class="post-date">
         {{ post.date | date: "%d/%m/%Y" }}
       </span>
-      
       <span style="flex: 1;">
         <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title }}
         </a>
       </span>
-
     </li>
     {% endfor %}
   </ul>
