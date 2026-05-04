@@ -1,21 +1,27 @@
 ---
 layout: default
 ---
+<style>
+  .post-link {
+    text-decoration: none !important;
+    color: #0066cc;
+  }
+  .post-link:hover {
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+  }
+</style>
 
 <div class="home">
   {{ content }}
-
-  <ul class="post-list" style="list-style: none; padding: 0; margin-top: 20px;">
+  <ul class="post-list" style="list-style: none; padding: 0;">
     {% for post in site.posts %}
-    <li style="margin-bottom: 5px; display: flex; align-items: baseline;">
-      <!-- Cột ngày tháng: Dùng font chữ đơn cách (monospace) để luôn thẳng hàng -->
-      <span style="flex: 0 0 110px; color: #555; font-family: monospace; font-size: 0.95em;">
+    <li style="margin-bottom: 8px; display: flex; align-items: baseline;">
+      <span style="flex: 0 0 110px; color: #666; font-family: monospace;">
         {{ post.date | date: "%d %b, %Y" }}
       </span>
-      
-      <!-- Cột tiêu đề -->
       <span style="flex: 1;">
-        <a href="{{ post.url | relative_url }}" style="color: #0066cc; text-decoration: none;">
+        <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title }}
         </a>
       </span>
@@ -23,16 +29,3 @@ layout: default
     {% endfor %}
   </ul>
 </div>
-
-<style>
-  .post-link {
-    text-decoration: none; /* Mặc định không gạch chân */
-    transition: color 0.2s ease;
-  }
-
-  .post-link:hover {
-    text-decoration: underline; /* Hiện gạch chân khi di chuột vào */
-    text-decoration-thickness: 1px; /* Độ dày của nét gạch */
-    text-underline-offset: 2px; /* Khoảng cách giữa chữ và nét gạch */
-  }
-</style>
