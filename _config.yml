@@ -58,3 +58,5 @@ plugins:
 google_site_verification: ""
 bing_site_verification: ""
 robots: noindex
+
+show_excerpts: false
