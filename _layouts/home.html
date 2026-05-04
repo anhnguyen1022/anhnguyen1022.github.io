@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="home">
+  {{ content }}
+
+  <ul class="post-list" style="list-style: none; padding: 0; margin-top: 20px;">
+    {% for post in site.posts %}
+    <li style="margin-bottom: 5px; display: flex; align-items: baseline;">
+      <!-- Cột ngày tháng: Dùng font chữ đơn cách (monospace) để luôn thẳng hàng -->
+      <span style="flex: 0 0 110px; color: #555; font-family: monospace; font-size: 0.95em;">
+        {{ post.date | date: "%d %b, %Y" }}
+      </span>
+      
+      <!-- Cột tiêu đề -->
+      <span style="flex: 1;">
+        <a href="{{ post.url | relative_url }}" style="color: #0066cc; text-decoration: none;">
+          {{ post.title }}
+        </a>
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
