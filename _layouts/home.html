@@ -18,13 +18,11 @@ seo:
   }
 
   .post-date {
-    /* Cố định độ rộng cột ngày */
     flex: 0 0 110px; 
     color: #555; 
     font-family: monospace; 
     font-size: 0.95em;
     font-weight: 400;
-    /* Ngăn ngày tháng bị xuống dòng trên màn hình nhỏ */
     white-space: nowrap; 
   }
 
@@ -32,7 +30,6 @@ seo:
     display: flex; 
     align-items: baseline; 
     margin-bottom: 5px;
-    /* THÊM: Tạo khoảng cách cố định 15px giữa 2 cột */
     column-gap: 15px; 
   }
 </style>
@@ -44,9 +41,9 @@ seo:
     {% for post in site.posts %}
     <li class="post-item">
       
-      <!-- Cột ngày tháng -->
+      <!-- Cột ngày tháng: Đã đổi sang định dạng Ngày/Tháng/Năm -->
       <span class="post-date">
-        {{ post.date | date: "%d/%b/%Y" }}
+        {{ post.date | date: "%d/%m/%Y" }}
       </span>
       
       <!-- Cột tiêu đề -->
