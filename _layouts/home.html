@@ -9,12 +9,12 @@ seo:
     color: #0066cc;
     font-size: 0.9em !important; 
     font-weight: 400 !important;
-    line-height: 1.5;
+    line-height: 1.2; /* Giảm chiều cao dòng của tiêu đề */
   }
   
   .post-link:hover {
     text-decoration: underline !important;
-    text-underline-offset: 1px !important;
+    text-underline-offset: 2px !important;
   }
 
   .post-date {
@@ -29,24 +29,29 @@ seo:
   .post-item {
     display: flex; 
     align-items: baseline; 
-    margin-bottom: 5px;
+    /* Chỉnh con số này nhỏ xuống (ví dụ 2px hoặc 0px) để các hàng sát nhau hơn */
+    margin-bottom: 2px; 
     column-gap: 15px; 
+  }
+
+  .post-list {
+    list-style: none; 
+    padding: 0; 
+    margin-top: 15px; /* Khoảng cách giữa nội dung trên và danh sách bài viết */
   }
 </style>
 
 <div class="home">
   {{ content }}
 
-  <ul class="post-list" style="list-style: none; padding: 0; margin-top: 20px;">
+  <ul class="post-list">
     {% for post in site.posts %}
     <li class="post-item">
       
-      <!-- Cột ngày tháng: Đã đổi sang định dạng Ngày/Tháng/Năm -->
       <span class="post-date">
         {{ post.date | date: "%d/%m/%Y" }}
       </span>
       
-      <!-- Cột tiêu đề -->
       <span style="flex: 1;">
         <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title }}
