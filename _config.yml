@@ -23,13 +23,8 @@ email: Ducanhnguyen1022@gmail.com
 description: ""
 baseurl: "journal" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
+# twitter_username: ""
 github_username:  Ducanhnguyen1022
-
-# Build settings
-theme: minima
-# plugins:
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -51,22 +46,29 @@ theme: minima
 #   - vendor/gems/
 #   - vendor/ruby/
 
-
+robots: noindex
 google_site_verification: ""
 bing_site_verification: ""
-robots: noindex
 
 show_excerpts: false
+
+# Build settings
+theme: minima
+# plugins:
 
 # Vô hiệu hóa highlighter
 highlighter: none
 
 kramdown:
   syntax_highlighter: null
+  input: GFM
+  hard_wrap: false
 
 sass:
   style: compressed
-  sass_dir: _sass
+
+minima:
+  google_fonts: []
 
 compress_html:
   clippings: all
