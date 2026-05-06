@@ -64,3 +64,5 @@ highlighter: none
 kramdown:
   syntax_highlighter: null
 
+sass:
+  style: compressed
