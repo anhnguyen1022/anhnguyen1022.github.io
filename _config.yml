@@ -42,17 +42,17 @@ theme: minima
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
- exclude:
-   - .sass-cache/
-   - .jekyll-cache/
-   - gemfiles/
-   - Gemfile
-   - Gemfile.lock
-   - node_modules/
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
 
 google_site_verification: ""
@@ -60,4 +60,10 @@ bing_site_verification: ""
 robots: noindex
 
 show_excerpts: false
+
+# Vô hiệu hóa highlighter
+highlighter: none
+
+kramdown:
+  syntax_highlighter: null
 
