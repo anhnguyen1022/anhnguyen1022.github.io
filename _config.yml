@@ -54,7 +54,7 @@ show_excerpts: false
 
 # Build settings
 theme: minima
-# plugins:
+plugins: []
 
 # Vô hiệu hóa highlighter
 highlighter: none
