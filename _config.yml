@@ -46,7 +46,7 @@ github_username:  Ducanhnguyen1022
 #   - vendor/gems/
 #   - vendor/ruby/
 
-robots: noindex
+robots: noindex, nofollow, noarchive, nosnippet
 google_site_verification: ""
 bing_site_verification: ""
 
