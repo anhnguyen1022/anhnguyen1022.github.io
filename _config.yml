@@ -66,3 +66,11 @@ kramdown:
 
 sass:
   style: compressed
+  sass_dir: _sass
+
+compress_html:
+  clippings: all
+  comments: all
+  end_of_line: none
+  blanklines: false
+  profile: false
