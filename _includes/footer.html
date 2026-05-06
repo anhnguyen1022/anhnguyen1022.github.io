@@ -1,17 +1,17 @@
-<footer class="site-footer">
+<footer class="site-footer" style="padding: 10px 0;"> <!-- Giảm padding để thu hẹp chiều cao tổng thể -->
   <div class="wrapper" style="text-align: center;">
     <div class="footer-col-wrapper" style="display: block;">
       
       <div class="footer-github-central">
-        <a href="https://github.com/{{ site.github_username }}" target="_blank" style="text-decoration: none; color: #828282;">
-          <svg class="svg-icon" style="width: 20px; height: 20px; vertical-align: middle; fill: #828282; margin-right: 5px;">
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" style="text-decoration: none; color: #828282; display: inline-flex; align-items: center; justify-content: center;">
+          <svg class="svg-icon" style="width: 18px; height: 18px; fill: #828282; margin-right: 0.3em;"> <!-- 0.3em mô phỏng chính xác độ rộng của 1 dấu cách (space bar) -->
             <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
           </svg>
-          <span class="username" style="font-size: 16px; vertical-align: middle;">{{ site.github_username }}</span>
+          <span class="username" style="font-size: 15px;">{{ site.github_username }}</span>
         </a>
       </div>
 
-      <div style="margin-top: 10px; font-size: 13px; color: #b5b5b5;">
+      <div style="margin-top: 2px; font-size: 13px; color: #b5b5b5;"> <!-- Thu nhỏ margin-top và font-size để tiết kiệm diện tích -->
         © {{ "now" | date: "%Y" }} • {{ site.title }}
       </div>
 
