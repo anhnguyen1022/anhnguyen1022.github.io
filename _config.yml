@@ -61,8 +61,3 @@ robots: noindex
 
 show_excerpts: false
 
-# Vô hiệu hóa highlighter
-highlighter: none
-
-kramdown:
-  syntax_highlighter: null
