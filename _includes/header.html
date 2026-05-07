@@ -1,16 +1,48 @@
-<header style="border: none; padding-top: 20px; margin-bottom: 30px;">
+<style>
+  /* Định dạng khung Header tổng thể */
+  .custom-header {
+    border: none;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* Hàng 1: Tên tiêu đề Blog */
+  .header-title-row {
+    margin-bottom: 8px;
+  }
+  .header-title-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  .header-title-text {
+    font-size: 1.25em;
+    letter-spacing: -0.5px;
+  }
+
+  /* Hàng 2: Menu điều hướng (Nav) */
+  .header-nav-link {
+    margin-right: 15px;
+    color: #0066cc;
+    text-decoration: none; /* Bỏ gạch chân mặc định */
+  }
   
+  .header-nav-link:hover {
+    text-decoration: underline; /* Chỉ hiện gạch chân khi di chuột */
+  }
+</style>
+
+<header class="custom-header">
   <div class="wrapper">
     
-    <div style="margin-bottom: 8px;">
-      <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: inherit;">
-        <strong style="font-size: 1.25em; letter-spacing: -0.5px;">{{ site.title }}</strong>
+    <div class="header-title-row">
+      <a href="{{ '/' | relative_url }}" class="header-title-link">
+        <strong class="header-title-text">{{ site.title }}</strong>
       </a>
     </div>
 
     <nav>
-      <a href="{{ '/' | relative_url }}" style="margin-right: 15px; color: #0066cc; text-decoration: underline;">Blog</a>
-      <a href="{{ '/about/' | relative_url }}" style="color: #0066cc; text-decoration: underline;">About</a>
+      <a href="{{ '/' | relative_url }}" class="header-nav-link">Blog</a>
+      <a href="{{ '/about/' | relative_url }}" class="header-nav-link">About</a>
     </nav>
 
   </div>
