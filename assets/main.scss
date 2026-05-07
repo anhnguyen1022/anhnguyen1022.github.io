@@ -6,3 +6,7 @@
 @import "minima";
 
 // 2. Viết CSS mới của bạn ở dưới này để đè lên cái cũ
+
+html {
+  overflow-y: scroll;
+}
