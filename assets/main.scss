@@ -8,8 +8,8 @@
 // 2. Viết CSS mới của bạn ở dưới này để đè lên cái cũ
 
 .post-content p {
-  text-align: justify;
+  text-align: justify !important;
   text-justify: inter-word; /* Tối ưu khoảng cách giữa các từ cho trình duyệt hiện đại */
   hyphens: auto;           /* Tự động ngắt từ nếu dòng quá dài (tùy chọn) */
-  line-height: 6;        /* Tăng khoảng cách dòng để dễ đọc hơn khi căn lề justify */
+  line-height: 1.5;        /* Tăng khoảng cách dòng để dễ đọc hơn khi căn lề justify */
 }
