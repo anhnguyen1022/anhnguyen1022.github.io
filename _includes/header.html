@@ -1,24 +1,48 @@
-<header class="site-header" style="margin-bottom: 30px;">
-  <div class="wrapper" style="max-width: 650px; margin: 0 auto; padding: 0;">
-    
-    <div style="display: flex; align-items: baseline;">
-      <div style="flex: 0 0 110px;">
-        <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: #111;">
-          <strong>{{ site.title }}</strong>
-        </a>
-      </div>
-      <div style="flex: 1;">
-        </div>
+<header class="site-header" style="border-top: none; padding: 20px 0; margin-bottom: 30px;">
+  <div class="nav-container">
+    <div class="header-row">
+      <a class="site-title-link" href="{{ '/' | relative_url }}">
+        <strong>{{ site.title }}</strong>
+      </a>
     </div>
 
-    <div style="display: flex; align-items: baseline; margin-top: 5px;">
-      <div style="flex: 0 0 110px;">
-        </div>
-      <nav style="flex: 1;">
-        <a href="{{ '/' | relative_url }}" style="margin-right: 15px; color: #0066cc; text-decoration: underline;">Blog</a>
-        <a href="{{ '/about/' | relative_url }}" style="color: #0066cc; text-decoration: underline;">About</a>
-      </nav>
-    </div>
-
+    <nav class="header-row navigation">
+      <a href="{{ '/' | relative_url }}">Blog</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+    </nav>
   </div>
 </header>
+
+<style>
+  /* Loại bỏ mọi đường kẻ của theme mặc định */
+  .site-header { border-bottom: none !important; }
+
+  .nav-container {
+    display: flex;
+    flex-direction: column; /* Xếp chồng hàng 1 và hàng 2 */
+    gap: 10px;             /* Khoảng cách giữa tên blog và menu */
+  }
+
+  .header-row {
+    /* Lề trái này phải khớp với padding của container chính (thường là 0 nếu bạn dùng layout tối giản) */
+    padding-left: 0; 
+    display: flex;
+  }
+
+  .site-title-link {
+    text-decoration: none;
+    color: #111;
+    font-size: 1.2rem;
+  }
+
+  .navigation a {
+    margin-right: 15px;
+    color: #0066cc;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .navigation a:hover {
+    color: #000;
+  }
+</style>
