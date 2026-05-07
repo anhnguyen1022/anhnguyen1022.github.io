@@ -1,10 +1,12 @@
-<header>
-  <a href="{{ '/' | relative_url }}">
-    <strong>{{ site.title }}</strong>
-  </a>
+<header style="display: flex; align-items: baseline; margin-bottom: 20px;">
+  <div style="flex: 0 0 110px;">
+    <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: inherit;">
+      <strong>{{ site.title }}</strong>
+    </a>
+  </div>
 
-  <nav>
-    <a href="{{ '/' | relative_url }}">Blog</a>
-    <a href="{{ '/about/' | relative_url }}">About</a>
+  <nav style="flex: 1;">
+    <a href="{{ '/' | relative_url }}" style="margin-right: 15px; color: #0066cc; text-decoration: underline;">Blog</a>
+    <a href="{{ '/about/' | relative_url }}" style="color: #0066cc; text-decoration: underline;">About</a>
   </nav>
 </header>
