@@ -3,13 +3,38 @@ layout: default
 seo:
   noindex: true
 ---
+<style>
+  .post-link {
+    text-decoration: none !important;
+    color: #0066cc;
+    /* Giảm nhẹ xuống 0.9em và ép độ đậm về mức bình thường */
+    font-size: 1em !important; 
+    font-weight: 400 !important;
+    line-height: 1.5;
+  }
+  
+  .post-link:hover {
+    text-decoration: underline !important;
+    text-underline-offset: 1px !important;
+    color: #0066cc;
+  }
+
+  /* Đảm bảo cột ngày tháng cũng đồng bộ */
+  .post-date {
+    flex: 0 0 110px; 
+    color: #555; 
+    font-family: monospace; 
+    font-size: 1em;
+    font-weight: 400;
+  }
+</style>
 
 <div class="home">
   {{ content }}
 
-  <ul class="home-post-list">
+  <ul class="post-list" style="list-style: none; padding: 0; margin-top: 20px;">
     {% for post in site.posts %}
-    <li class="home-post-item">
+    <li style="margin-bottom: 5px; display: flex; align-items: baseline;">
       
       <!-- Cột ngày tháng -->
       <span class="post-date">
@@ -17,7 +42,7 @@ seo:
       </span>
       
       <!-- Cột tiêu đề -->
-      <span class="home-post-title">
+      <span style="flex: 1;">
         <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title }}
         </a>
