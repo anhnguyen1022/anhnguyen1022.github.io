@@ -1,4 +1,89 @@
-// _includes/header
-// _includes/footer
-// _layouts/home
-// _layouts/post
+/* _layouts/home    */
+  .home-post-list {
+    list-style: none; 
+    padding: 0; 
+    margin-top: 10px;
+  }
+
+  .home-post-item {
+    margin-bottom: 5px; 
+    display: flex; 
+    align-items: baseline;
+  }
+
+  .home-post-title {
+    flex: 1;
+  }
+
+  .post-link {
+    text-decoration: none !important;
+    color: #0066cc;
+    font-size: 1em !important; 
+    font-weight: 400 !important;
+    line-height: 1.5;
+  }
+  
+  .post-link:hover {
+    text-decoration: underline !important;
+    text-underline-offset: 1px !important;
+    color: #0066cc;
+  }
+
+  .post-date {
+    flex: 0 0 110px; 
+    color: #555; 
+    font-family: monospace; 
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+
+/* _includes/header */
+  /* Định dạng khung Header tổng thể */
+  .custom-header {
+    border: none;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Hàng 1: Tên tiêu đề Blog */
+  .header-title-row {
+    margin: 0 0 12px 0
+  }
+
+  .header-title-text {
+    font-size: 1.5em;
+    letter-spacing: 0;
+    color: #222 !important;
+    display: inline-block;
+  }
+
+  .header-title-text:hover {
+    text-decoration: none !important;
+    color: #222;
+  }
+
+  /* Hàng 2: Menu điều hướng (Nav) */
+  .header-nav-link {
+    margin-right: 15px;
+    color: #0066cc;
+    text-decoration: none; /* Bỏ gạch chân mặc định */
+  }
+  
+  .header-nav-link:hover {
+    text-decoration: underline; /* Chỉ hiện gạch chân khi di chuột */
+  }
+
+html {
+  overflow-y: scroll;
+}
+
+/* _layouts/post    */
+    .post-header {
+        margin-bottom:20px;
+    }
+
+    .dt-published {
+        font-size:15px;
+    }
+/* _includes/footer */
