@@ -21,7 +21,7 @@
 title: AnhNg's journal
 email: Ducanhnguyen1022@gmail.com
 description: ""
-baseurl: "journal" # the subpath of your site, e.g. /blog
+baseurl: "/journal" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: ""
 github_username:  Ducanhnguyen1022
