@@ -10,7 +10,7 @@ Khoảng 6h45, thuyền nhổ neo, hướng về đảo Trường Sa Lớn.
 Khoảng 17h, tàu nhổ neo rời Trường Sa.  
 
 <div align="center">
-    <img src="https://i.ibb.co/CpLhvVyw/20260330-122003.jpg" alt="" loading="lazy" style="width: 60%; height: auto; display: block; margin: 0 auto;">
+    <img src="https://i.ibb.co/CpLhvVyw/20260330-122003.jpg" alt="" loading="lazy" style="width: 70%; height: auto; display: block; margin: 0 auto;">
     <br>
     <small style="display: block; margin-top: -15px;"><i><font color="#888">Đảo Trường Sa lớn</font></i></small>
 </div>
