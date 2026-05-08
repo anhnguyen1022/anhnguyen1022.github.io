@@ -16,8 +16,7 @@ layout: default
           {% when "5" %}Thứ sáu
           {% when "6" %}Thứ bảy
           {% when "7" %}Chủ nhật
-        {% endcase %}, 
-        {{ page.date | date: "%-d/%-m/%Y" }}
+        {% endcase %}, {{ page.date | date: "%-d/%-m/%Y" }}
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
