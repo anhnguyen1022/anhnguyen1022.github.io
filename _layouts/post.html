@@ -9,13 +9,13 @@ layout: default
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {% assign wday = page.date | date: "%u" %}
         {% case wday %}
-          {% when "1" %}Thứ hai
-          {% when "2" %}Thứ ba
-          {% when "3" %}Thứ tư
-          {% when "4" %}Thứ năm
-          {% when "5" %}Thứ sáu
-          {% when "6" %}Thứ bảy
-          {% when "7" %}Chủ nhật
+          {% when "1" -%}Thứ hai
+          {% when "2" -%}Thứ ba
+          {% when "3" -%}Thứ tư
+          {% when "4" -%}Thứ năm
+          {% when "5" -%}Thứ sáu
+          {% when "6" -%}Thứ bảy
+          {% when "7" -%}Chủ nhật
         {% endcase %}, {{ page.date | date: "%-d/%-m/%Y" }}
       </time>
       {%- if page.author -%}
