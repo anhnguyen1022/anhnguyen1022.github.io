@@ -34,17 +34,18 @@ github_username:  Ducanhnguyen1022
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - node_modules/
+  - vendor/
+  - .github/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - .sass-cache/
+  - .jekyll-cache/
 
 robots: noindex, nofollow, noarchive, nosnippet
 google_site_verification: ""
