@@ -3,4 +3,4 @@ layout: post
 title: Ăn tối Long Wang Lê Văn Việt
 date: 2026-05-08
 ---
-Sau ngày làm sml, bọn tôi hẹn nhau ăn đồ hấp tại Long Wang chi nhánh vincom Lê Văn Việt. Anh N đi Nhật về có mua cho bọn tôi quà là socola kitkat và gói kẹo vị là lạ. 
+Sau ngày cuối tuần làm sml, bọn tôi hẹn nhau ăn đồ hấp tại Long Wang chi nhánh vincom Lê Văn Việt. Anh N đi Nhật về có mua cho bọn tôi quà là socola kitkat và gói kẹo vị là lạ. T kể sơ sơ về thay đổi tại chỗ làm, t cũng tránh đề cập nhiều đến những vấn đề tiêu cực, vì anh N cũng biết cả rồi. Bọn tôi chuyển hướng sang về du lịch và đầu tư bđs, thứ t chưa tìm hiểu. Đến giờ đóng cửa, bọn t về. Trên đường về t chợt nhớ có mấy thứ chưa kịp kể, thôi hẹn dịp sau vậy.
