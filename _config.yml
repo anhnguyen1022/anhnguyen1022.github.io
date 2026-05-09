@@ -35,17 +35,20 @@ github_username:  Ducanhnguyen1022
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - node_modules/
-  - vendor/
-  - .github/
-  - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - README.md
+  - LICENSE
   - package.json
   - package-lock.json
   - yarn.lock
-  - .sass-cache/
-  - .jekyll-cache/
+  - .gitignore
+  - .github/
 
 robots: noindex, nofollow, noarchive, nosnippet
 google_site_verification: ""
