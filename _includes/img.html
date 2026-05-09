@@ -1,5 +1,13 @@
-<div align="center">
-<img class="post-image" src="{{ include.url }}" loading="lazy" decoding="async" alt="{{ include.alt | default: '' }}" style="width: {{ include.w | default: '70%' }}">
-<br>
-<small class="image-cap">{{ include.cap }}</font></i></small>
-</div>
+<figure class="post-figure">
+  <img 
+    src="{{ include.url | relative_url }}" 
+    alt="" 
+    loading="lazy" 
+    decoding="async"
+    fetchpriority="low"
+    style="width: {{ include.w | default: '70%' }};"
+  >
+  {% if include.cap %}
+    <figcaption>{{ include.cap }}</figcaption>
+  {% endif %}
+</figure>

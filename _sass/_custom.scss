@@ -1,4 +1,4 @@
-/* --- Header Styles header.html--- */
+/* --- Header Styles _includes/header.html--- */
 .custom-header {
     border: none;
     padding-top: 40px;
@@ -72,7 +72,7 @@ html {
     font-weight: 400;
   }
 
-/* --- default.html --- */
+/* --- _layouts/default.html --- */
  .page-content {
     padding: 5px 0 0 0;
  }
@@ -80,16 +80,78 @@ html {
     padding-left: 20px;
  }
 
-/* --- Post Detail Styles --- */
+/* --- Post Detail Styles _layouts/post.html--- */
 article h1.post-title {
   font-size: 32px;
 }
 
-/* --- img _includes/img.html --- */
-.post-image {
-  height: auto;
-  display: block;
-  margin: 0 auto;
+.post-content p {
+  text-align: justify ;
+  text-justify: inter-word; /* Tối ưu khoảng cách giữa các từ cho trình duyệt hiện đại */
+  hyphens: auto;           /* Tự động ngắt từ nếu dòng quá dài (tùy chọn) */
+  line-height: 1.5;        /* Tăng khoảng cách dòng để dễ đọc hơn khi căn lề justify */
 }
 
-/* --- Footer Styles --- */
+/* --- img _includes/img.html --- */
+.post-figure {
+  margin: 1em auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-figure img {
+  display: block;
+  height: auto;
+}
+
+.post-figure figcaption {
+  margin-top: 8px;
+  font-size: 0.85em;
+  font-style: italic;
+  color: #888;
+  line-height: 1.6;
+  max-width: 80%; /* Giới hạn chiều rộng chú thích để không bị tràn lề */
+}
+/* --- Footer Styles --- _includes/footer.html*/
+footer.site-footer {
+  padding: 20px 0 30px;
+  border-top: none;
+}
+
+/* Căn giữa wrapper bên trong footer */
+footer.site-footer .wrapper {
+  text-align: center;
+}
+
+/* Ép footer-col-wrapper (vốn là flex trong theme gốc) thành khối đơn để căn giữa */
+footer.site-footer .footer-col-wrapper {
+  display: block;
+}
+
+/* Tối ưu phần GitHub Central */
+.footer-github-central a {
+  text-decoration: none;
+  color: #828282;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-icon {
+  width: 18px;
+  height: 18px;
+  fill: #828282;
+  margin-right: 0px;
+}
+
+.footer-github-central .username {
+  font-size: 15px;
+}
+
+/* Tối ưu phần Copyright */
+.footer-copyright {
+  font-size: 13px;
+  color: #b5b5b5;
+}
