@@ -4,10 +4,9 @@
     alt="" 
     loading="lazy" 
     decoding="async"
-    fetchpriority="low"
     style="width: {{ include.w | default: '70%' }};"
   >
-  {% if include.cap %}
+  {%- if include.cap -%}
     <figcaption>{{ include.cap }}</figcaption>
-  {% endif %}
+  {%- endif -%}
 </figure>

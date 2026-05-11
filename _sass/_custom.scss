@@ -1,3 +1,14 @@
+:root {
+  --c-text:  #222;
+  --c-link:  #0066cc;
+  --c-muted: #444;
+  --c-faint: #888;
+}
+
+html {
+  overflow-y: scroll;
+}
+
 /* --- Header Styles _includes/header.html--- */
 .custom-header {
     border: none;
@@ -6,33 +17,39 @@
   }
 
   /* Hàng 1: Tên tiêu đề Blog */
-  a.header-title-text {
+  .custom-header .header-title-text {
     font-weight: bold;
     font-size: 24px;
-    color: #222 ;
+    color: var(--c-text);
     display: block;
-    margin: 0 0 17px 0;
+    margin-bottom: 17px;
   }
 
-  a.header-title-text:hover {
+  .custom-header .header-title-text:hover {
     text-decoration: none ;
-    color: #222;
+    color: var(--c-text);
   }
 
   /* Hàng 2: Menu điều hướng (Nav) */
   .header-nav-link {
     margin-right: 15px;
-    color: #0066cc;
-    text-decoration: none; /* Bỏ gạch chân mặc định */
+    color: var(--c-link);
+    text-decoration: none; 
   }
   
   .header-nav-link:hover {
     text-decoration: underline; /* Chỉ hiện gạch chân khi di chuột */
+    color: var(--c-link);
   }
 
-html {
-  overflow-y: scroll;
-}
+/* --- _layouts/default.html --- */
+ main {
+    padding: 5px 0 0 0;
+ }
+ .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+ }
 
 /* --- Home & Post List Styles _layouts/home.html--- */
   ul.post-list {
@@ -47,41 +64,30 @@ html {
     align-items: baseline;
   }
   .post-link {
+    flex: 1;
     text-decoration: none ;
-    color: #0066cc;
+    color: var(--c-link);
     font-size: 1em; 
-    font-weight: 400;
     line-height: 1.5;
   }
   
   .post-link:hover {
     text-decoration: underline;
     text-underline-offset: 1px;
-    color: #0066cc;
+    color: var(--c-link);
   }
 
   /* Đảm bảo cột ngày tháng cũng đồng bộ */
   .post-date {
     flex: 0 0 110px; 
-    color: #555; 
+    color: var(--c-muted); 
     font-family: monospace; 
     font-size: 1em;
-    font-weight: 400;
   }
 
-/* --- _layouts/default.html --- */
- .page-content {
-    padding: 5px 0 0 0;
- }
- .wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
- }
+
 
 /* --- Post Detail Styles _layouts/post.html--- */
-header.post-header {
-  margin-bottom: 16px;
-}
 
 h1.post-title {
   margin-top: 18px;
@@ -89,15 +95,19 @@ h1.post-title {
   font-weight: 600;    
 }
 
-.dt-published {
-  font-size: 15px;
-}
 
-article h1.post-title {
+article.post h1.post-title {
   font-size: 32px;
 }
 
-.post-content p {
+article.post time {
+  font-size: 15px;
+  color: var(--c-muted); 
+  display: block;
+  margin-bottom: 1em;
+}
+
+article.post p {
   text-align: justify ;
   text-justify: inter-word; /* Tối ưu khoảng cách giữa các từ cho trình duyệt hiện đại */
   hyphens: auto;           /* Tự động ngắt từ nếu dòng quá dài (tùy chọn) */
@@ -122,7 +132,7 @@ article h1.post-title {
   margin-top: 8px;
   font-size: 0.85em;
   font-style: italic;
-  color: #888;
+  color: var(--c-faint);
   line-height: 1.6;
   max-width: 80%; /* Giới hạn chiều rộng chú thích để không bị tràn lề */
 }
@@ -145,7 +155,7 @@ footer.site-footer .footer-col-wrapper {
 /* Tối ưu phần GitHub Central */
 .footer-github-central a {
   text-decoration: none;
-  color: #828282;
+  color: var(--c-muted);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -154,7 +164,7 @@ footer.site-footer .footer-col-wrapper {
 .svg-icon {
   width: 18px;
   height: 18px;
-  fill: #828282;
+  fill: var(--c-muted);
   margin-right: 0px;
 }
 
@@ -165,5 +175,5 @@ footer.site-footer .footer-col-wrapper {
 /* Tối ưu phần Copyright */
 .footer-copyright {
   font-size: 13px;
-  color: #b5b5b5;
+  color: var(--c-faint);
 }

@@ -3,27 +3,18 @@ layout: default
 seo:
   noindex: true
 ---
-
-<div class="home">
   {{ content }}
-
   <ul class="post-list">
     {% for post in site.posts %}
     <li class="post-item">
-      
       <!-- Cột ngày tháng -->
-      <span class="post-date">
+      <time class="post-date">
         {{ post.date | date: "%d/%m/%Y" }}
-      </span>
-      
+      </time>
       <!-- Cột tiêu đề -->
-      <span style="flex: 1;">
-        <a class="post-link" href="{{ post.url | relative_url }}">
+      <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title }}
-        </a>
-      </span>
-
+      </a>
     </li>
     {% endfor %}
   </ul>
-</div>
