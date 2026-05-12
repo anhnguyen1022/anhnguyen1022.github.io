@@ -50,10 +50,6 @@ exclude:
   - .gitignore
   - .github/
 
-robots: noindex, nofollow, noarchive, nosnippet
-google_site_verification: ""
-bing_site_verification: ""
-
 show_excerpts: false
 
 # Build settings
