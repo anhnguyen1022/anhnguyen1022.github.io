@@ -1,20 +1,13 @@
 <footer class="site-footer"> 
   <div class="wrapper">
-    <div class="footer-col-wrapper">
-      
-      <div class="footer-github-central">
-        <a href="https://github.com/{{ site.github_username }}" target="_blank">
+      <a href="https://github.com/{{ site.github_username }}" target="_blank">
           <svg class="svg-icon"> <!-- 0.3em mô phỏng chính xác độ rộng của 1 dấu cách (space bar) -->
             <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
           </svg>
-          <span class="username">{{ site.github_username }}</span>
-        </a>
-      </div>
-
+          {{ site.github_username }}
+      </a>
       <div class="footer-copyright"> <!-- Thu nhỏ margin-top và font-size để tiết kiệm diện tích -->
         © {{ "now" | date: "%Y" }} • {{ site.title }}
       </div>
-
-    </div>
   </div>
 </footer>

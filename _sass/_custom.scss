@@ -136,44 +136,40 @@ article.post p {
   line-height: 1.6;
   max-width: 80%; /* Giới hạn chiều rộng chú thích để không bị tràn lề */
 }
-/* --- Footer Styles --- _includes/footer.html*/
-footer.site-footer {
-  padding: 20px 0 30px;
-  border-top: none;
+/* --- FOOTER Styles --- _includes/footer.html*/
+.site-footer {
+  padding: 1.25rem 0 1.75rem;
+  border-top: 0;
 }
 
 /* Căn giữa wrapper bên trong footer */
-footer.site-footer .wrapper {
+.site-footer .wrapper {
+  display: grid;
+  justify-items: center;
   text-align: center;
-}
-
-/* Ép footer-col-wrapper (vốn là flex trong theme gốc) thành khối đơn để căn giữa */
-footer.site-footer .footer-col-wrapper {
-  display: block;
+  gap: 0.2rem;
 }
 
 /* Tối ưu phần GitHub Central */
-.footer-github-central a {
+.site-footer a {
   text-decoration: none;
   color: var(--c-muted);
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  min-width: 0;
 }
 
 .svg-icon {
   width: 18px;
   height: 18px;
-  fill: var(--c-muted);
-  margin-right: 0px;
+  fill: currentColor;
+  flex: none;
 }
 
-.footer-github-central .username {
-  font-size: 15px;
-}
 
 /* Tối ưu phần Copyright */
 .footer-copyright {
-  font-size: 13px;
+  font-size: .875rem;
   color: var(--c-faint);
+  opacity: .7;
 }
