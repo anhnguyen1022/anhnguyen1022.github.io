@@ -41,6 +41,7 @@ html {
 
 body {
   font-family: $base-font-family;
+  margin: 0;
 }
 
 /* --- partial minima style --- */
@@ -54,8 +55,8 @@ body {
 
   @include media-query($on-laptop) {
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit * 0.5;
-    padding-left: $spacing-unit * 0.5;
+    padding-right: $spacing-unit * 0.67;
+    padding-left: $spacing-unit * 0.67;
   }
 }
 
