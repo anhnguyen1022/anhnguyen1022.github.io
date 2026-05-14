@@ -1,10 +1,9 @@
-<figure class="post-figure">
+<figure class="post-figure" style="--w:{{ include.w | default: '70%' }}">
   <img 
     src="{{ include.url | relative_url }}" 
     alt="" 
     loading="lazy" 
     decoding="async"
-    style="width: {{ include.w | default: '70%' }};"
   >
   {%- if include.cap -%}
     <figcaption>{{ include.cap }}</figcaption>
