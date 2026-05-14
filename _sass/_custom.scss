@@ -12,8 +12,6 @@
 $base-font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  0.875rem;
-$spacing-unit:    1.25rem;
-
 
 html {
   overflow-y: scroll;
@@ -43,26 +41,36 @@ body {
     font-weight: bold;
     font-size: 24px;
     color: var(--c-text);
-    display: block;
+    display: inline-block;
     margin-bottom: 17px;
     text-decoration: none ;
   }
 
   /* Hàng 2: Menu điều hướng (Nav) */
-  .header-nav-link {
-    margin-right: 15px;
+  
+  .site-nav{
+  display:flex;
+  gap:.5rem;
+    a{
+      color:var(--c-link);
+      text-decoration:none;
+      &:hover{
+      text-decoration:underline;
+      }
+    }
+  }
+
+  .post-link {
     color: var(--c-link);
     text-decoration: none; 
     &:hover {text-decoration: underline;}
   }
-
-
+  
 /* --- Home & Post List Styles _layouts/home.html--- */
   .post-list {
     list-style: none; 
     padding: 0; 
     margin-top: 2.2rem;
-    font-size: $base-font-size;
   }
 
   .post-item {
@@ -72,10 +80,7 @@ body {
   }
   .post-link {
     flex: 1;
-    text-decoration: none ;
-    color: var(--c-link);
     line-height: 1.5;
-    &:hover {text-decoration: underline;}
   }
   
 
@@ -86,9 +91,7 @@ body {
     font: $base-font-size monospace; 
   }
 
-
-
-/* --- Post Detail Styles _layouts/post.html--- */
+/* --- _layouts/post.html--- */
 
 .post-title {
   margin: 1.1rem 0 1.9rem;
@@ -96,7 +99,6 @@ body {
   color: var(--c-text); 
   font-size: 32px;
 }
-
 
 .post time {
   font-size: $small-font-size;
@@ -143,11 +145,10 @@ body {
 
 /* Tối ưu phần GitHub Central */
 .site-footer a {
-  text-decoration: none;
-  color: var(--c-muted);
   display: inline-flex;
   align-items: center;
-  min-width: 0;
+  text-decoration: none;
+  color: var(--c-muted);
 }
 
 .svg-icon {
