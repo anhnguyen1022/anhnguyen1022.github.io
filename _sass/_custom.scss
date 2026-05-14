@@ -31,12 +31,8 @@ body {
 
 /* --- partial minima style --- */
 .wrapper {
-  width: min(720px,calc(100% - 2rem));
+  width: min(720px,calc(100% - 2.5rem));
   margin-inline:auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  display: flow-root;
-
 }
 
 /* --- _layouts/default.html --- */
