@@ -6,11 +6,11 @@ seo:
   {{ content }}
   <ul class="post-list">
     {%- for post in site.posts -%}
-    <li class="post-item">
-      <time class="post-date">
+    <li>
+      <time>
         {{ post.date | date: "%d/%m/%Y" }}
       </time>
-      <a class="post-link" href="{{ post.url | relative_url }}">
+      <a href="{{ post.url | relative_url }}">
           {{ post.title }}
       </a>
     </li>

@@ -22,7 +22,8 @@ html {
 body {
   font-family: $f;
   margin: 0;
-  color: $c-text;
+  color: $c-text; 
+  line-height: 1.5;
 }
 
 /* --- partial minima style --- */
@@ -36,7 +37,6 @@ body {
 /* --- Header Styles _includes/header.html--- */
 .custom-header {
     padding-top: 2.3rem;
-    margin-bottom: 0.6rem;
   }
 
   /* Hàng 1: Tên tiêu đề Blog */
@@ -57,25 +57,23 @@ body {
     a { @extend %link; }
     }
   
-
-  .post-link {
-    flex: 1;
-    line-height: 1.5;
-    @extend %link;
-  }
   
 /* --- Home & Post List Styles _layouts/home.html--- */
   .post-list {
     list-style: none; 
     padding: 0; 
-    margin-top: 2.2rem;
+    margin-top: 2rem;
   }
 
-  .post-item {
+  .post-list li {
     margin-bottom: 5px; 
     display: flex; 
     align-items: baseline;
   }  
+
+  .post-list a {
+    @extend %link;
+  }
 
   /* Đảm bảo cột ngày tháng cũng đồng bộ */
   time {
@@ -85,7 +83,7 @@ body {
 
 /* --- _layouts/post.html--- */
 
-.post-title {
+h1 {
   margin: 1.1rem 0 1.4rem;
   font-weight: 600;   
   font-size: 2rem;
@@ -99,10 +97,9 @@ body {
 }
 
 .post p {
-  text-align: justify ;
+  text-align: justify;
   text-justify: inter-word; 
-  hyphens: auto;           
-  line-height: 1.5;        
+  hyphens: auto;              
 }
 
 /* --- img _includes/img.html --- */
@@ -149,5 +146,4 @@ body {
   font-size: $sm;
   color: $c-faint;
   opacity: .7;
-  margin: .25rem 0 0;
 }
