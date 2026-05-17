@@ -124,21 +124,16 @@ body {
   }
 }
 /* --- FOOTER Styles --- _includes/footer.html*/
-.site-footer {
-  padding: 1.25rem 0 1.75rem;
-}
 
-/* Căn giữa wrapper bên trong footer */
 .site-footer {
   text-align: center;
-}
-
-/* Tối ưu phần GitHub Central */
-.site-footer a {
+  padding: 1.25rem 0 1.75rem;
+  a {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   color: var($c-muted);
+  }
 }
 
 .svg-icon {
@@ -147,7 +142,6 @@ body {
   fill: currentColor;
   flex: none;
 }
-
 
 /* Tối ưu phần Copyright */
 .footer-copyright {
