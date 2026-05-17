@@ -60,7 +60,7 @@ body {
 
   .post-link {
     flex: 1;
-    line-height: 1.6;
+    line-height: 1.5;
     @extend %link;
   }
   
@@ -93,7 +93,7 @@ body {
 
 .post time {
   font-size: $sm;
-  color: var($c-muted); 
+  color: $c-muted; 
   display: block;
   margin-bottom: 1em;
 }
@@ -120,7 +120,7 @@ body {
   font-size: $sm;
   font-style: italic;
   line-height: 1.5;
-  color: var($c-faint);
+  color: $c-faint;
   }
 }
 /* --- FOOTER Styles --- _includes/footer.html*/
@@ -131,14 +131,15 @@ body {
   a {
   display: inline-flex;
   align-items: center;
+  gap: .25rem;
   text-decoration: none;
-  color: var($c-muted);
+  color:inherit;
   }
 }
 
 .svg-icon {
-  width: 1rem;
-  height: 1rem;
+  width: 1em;
+  height: 1em;
   fill: currentColor;
   flex: none;
 }
@@ -146,6 +147,7 @@ body {
 /* Tối ưu phần Copyright */
 .footer-copyright {
   font-size: $sm;
-  color: var($c-faint);
+  color: $c-faint;
   opacity: .7;
+  margin: .25rem 0 0;
 }
