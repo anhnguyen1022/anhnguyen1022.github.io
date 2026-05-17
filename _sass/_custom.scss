@@ -1,17 +1,19 @@
 @charset "utf-8";
 
-:root {
-  --c-text:  #222;
-  --c-link:  #0066cc;
-  --c-muted: #444;
-  --c-faint: #888;
-}
-
 // Define defaults for each variable.
-
+$c-text:  #222;
+$c-link:  #06c;
+$c-muted: #444;
+$c-faint: #888;
 $f: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 $base-font-size:   16px;
-$sm:  0.875rem;
+$sm:  15px;
+
+%link {
+  color: $c-link;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
 
 html {
   overflow-y: scroll;
@@ -20,12 +22,12 @@ html {
 body {
   font-family: $f;
   margin: 0;
-  color: var(--c-text);
+  color: $c-text;
 }
 
 /* --- partial minima style --- */
 .wrapper {
-  width: min(720px,calc(100% - 2.5rem));
+  width: min(720px, 100% - 2.5rem);
   margin-inline:auto;
 }
 
@@ -33,17 +35,17 @@ body {
 
 /* --- Header Styles _includes/header.html--- */
 .custom-header {
-    padding-top: 2.2rem;
+    padding-top: 2.3rem;
     margin-bottom: 0.6rem;
   }
 
   /* Hàng 1: Tên tiêu đề Blog */
-  .header-title-text {
-    font-weight: bold;
-    font-size: 24px;
+  .site-title {
+    font-weight: 700;
+    font-size: 1.5rem;
     color: inherit;
     display: inline-block;
-    margin-bottom: 17px;
+    margin-bottom: 1rem;
     text-decoration: none ;
   }
 
@@ -52,21 +54,14 @@ body {
   .site-nav{
   display:flex;
   gap:.5rem;
-    a{
-      color:var(--c-link);
-      text-decoration:none;
-      &:hover{
-      text-decoration:underline;
-      }
+    a { @extend %link; }
     }
-  }
+  
 
   .post-link {
     flex: 1;
-    line-height: 1.5;
-    color: var(--c-link);
-    text-decoration: none; 
-    &:hover {text-decoration: underline;}
+    line-height: 1.6;
+    @extend %link;
   }
   
 /* --- Home & Post List Styles _layouts/home.html--- */
@@ -83,10 +78,9 @@ body {
   }  
 
   /* Đảm bảo cột ngày tháng cũng đồng bộ */
-  .post-date {
-    flex: 0 0 110px; 
-    color: var(--c-muted); 
-    font: $base-font-size monospace; 
+  time {
+    flex: 0 0 7rem; 
+    color: $c-muted;
   }
 
 /* --- _layouts/post.html--- */
@@ -94,12 +88,12 @@ body {
 .post-title {
   margin: 1.1rem 0 1.9rem;
   font-weight: 600;   
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .post time {
   font-size: $sm;
-  color: var(--c-muted); 
+  color: var($c-muted); 
   display: block;
   margin-bottom: 1em;
 }
@@ -126,7 +120,7 @@ body {
   font-size: $sm;
   font-style: italic;
   line-height: 1.5;
-  color: var(--c-faint);
+  color: var($c-faint);
   }
 }
 /* --- FOOTER Styles --- _includes/footer.html*/
@@ -144,7 +138,7 @@ body {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: var(--c-muted);
+  color: var($c-muted);
 }
 
 .svg-icon {
@@ -158,6 +152,6 @@ body {
 /* Tối ưu phần Copyright */
 .footer-copyright {
   font-size: $sm;
-  color: var(--c-faint);
+  color: var($c-faint);
   opacity: .7;
 }

@@ -5,16 +5,14 @@ seo:
 ---
   {{ content }}
   <ul class="post-list">
-    {% for post in site.posts %}
+    {%- for post in site.posts -%}
     <li class="post-item">
-      <!-- Cột ngày tháng -->
       <time class="post-date">
         {{ post.date | date: "%d/%m/%Y" }}
       </time>
-      <!-- Cột tiêu đề -->
       <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title }}
       </a>
     </li>
-    {% endfor %}
+    {%- endfor -%}
   </ul>
