@@ -62,6 +62,7 @@ nav a {
 time {
     flex: 0 0 7rem; 
     color: $c-muted;
+    font-variant-numeric: tabular-nums;
 }
 
 /* --- _layouts/post.html--- */
@@ -90,6 +91,7 @@ h1 {
   display: block;
   width: var(--w, 70%);
   max-width: 100%;
+  height: auto;
   margin-inline: auto;
   }
   figcaption {
