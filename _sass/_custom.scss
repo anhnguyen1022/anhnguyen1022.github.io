@@ -1,19 +1,12 @@
 @charset "utf-8";
 
-// Define defaults for each variable.
+// Variable.
 $c-text:  #222;
 $c-link:  #06c;
 $c-muted: #444;
 $c-faint: #888;
 $f: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-$base-font-size:   16px;
 $sm:  15px;
-
-%link {
-  color: $c-link;
-  text-decoration: none;
-  &:hover { text-decoration: underline; }
-}
 
 html {
   overflow-y: scroll;
@@ -28,11 +21,13 @@ body {
   line-height: 1.5;
 }
 
-main {
-  line-height: 1.75;
-}
+main { line-height: 1.75; }
 
-a { @extend %link ; }
+a {
+  color: $c-link;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
 
   /* Hàng 1: Tên tiêu đề Blog */
 .title {
@@ -47,9 +42,7 @@ a { @extend %link ; }
 }
 
 /* Hàng 2: Menu điều hướng (Nav) */
-nav a {
-  margin-right: .5rem;
-}
+nav a { margin-right: .5rem; }
   
 /* --- Home & Post List Styles _layouts/home.html--- */
 .post-list {
@@ -87,6 +80,7 @@ h1 {
 /* --- img _includes/img.html --- */
 .post-figure {
   margin: 1rem auto;
+
   img {
   display: block;
   width: var(--w, 70%);
@@ -94,6 +88,7 @@ h1 {
   height: auto;
   margin-inline: auto;
   }
+
   figcaption {
   width: min(var(--w, 70%), 100%);
   margin: .5rem auto 0;
@@ -107,6 +102,7 @@ h1 {
 .site-footer {
   text-align: center;
   padding: 1.25rem 0 1.75rem;
+
   a {
     display: inline-flex;
     align-items: center;
