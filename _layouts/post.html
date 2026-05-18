@@ -7,7 +7,7 @@ layout: default
 <article class="post">
   <h1>{{ page.title | escape }}</h1>
   <time datetime="{{ d | date_to_xmlschema }}">
-    {{- weekdays[wday] }}, {{ d | date: "%-d/%-m/%Y" -}}
+    <p>{{- weekdays[wday] }}, {{ d | date: "%-d/%-m/%Y" -}}</p>
   </time>
   {{ content }}
 </article>

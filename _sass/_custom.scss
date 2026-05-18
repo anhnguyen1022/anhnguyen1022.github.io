@@ -21,85 +21,66 @@ html {
 
 body {
   font-family: $f;
-  margin: 0;
+  margin: auto;
+  max-width: 720px;
+  padding: 1.25rem;
   color: $c-text; 
   line-height: 1.5;
 }
 
-/* --- partial minima style --- */
-.wrapper {
-  width: min(720px, 100% - 2.5rem);
-  margin-inline:auto;
+main {
+  line-height: 1.75;
 }
 
-/* --- _layouts/default.html --- */
-
-/* --- Header Styles _includes/header.html--- */
-.custom-header {
-    padding-top: 2.3rem;
-  }
+a { @extend %link ; }
 
   /* Hàng 1: Tên tiêu đề Blog */
-  .site-title {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: inherit;
-    display: inline-block;
-    margin-bottom: 1rem;
-    text-decoration: none ;
+.title {
+  &:hover {
+    text-decoration: none;
   }
+  h1 {
+    font-weight: 700; 
+    font-size: 1.5rem; 
+    color: $c-text;
+  }
+}
 
-  /* Hàng 2: Menu điều hướng (Nav) */
-  
-  .site-nav{
-  display:flex;
-  gap:.5rem;
-    a { @extend %link; }
-    }
-  
+/* Hàng 2: Menu điều hướng (Nav) */
+nav a {
+  margin-right: .5rem;
+}
   
 /* --- Home & Post List Styles _layouts/home.html--- */
-  .post-list {
+.post-list {
     list-style: none; 
     padding: 0; 
     margin-top: 2rem;
-  }
+    li {display: flex; }
+}
 
-  .post-list li {
-    margin-bottom: 5px; 
-    display: flex; 
-    align-items: baseline;
-  }  
-
-  .post-list a {
-    @extend %link;
-  }
-
-  /* Đảm bảo cột ngày tháng cũng đồng bộ */
-  time {
+time {
     flex: 0 0 7rem; 
     color: $c-muted;
-  }
+}
 
 /* --- _layouts/post.html--- */
 
 h1 {
-  margin: 1.1rem 0 1.4rem;
   font-weight: 600;   
   font-size: 2rem;
 }
 
-.post time {
-  font-size: $sm;
-  color: $c-muted; 
-  display: block;
-  margin-bottom: 1em;
-}
-
-.post p {
-  text-align: justify;
-  text-justify: inter-word; 
-  hyphens: auto;              
+.post {
+  time {
+    font-size: $sm;
+    flex: none;
+  }
+  p {
+    text-align: justify;
+    text-justify: inter-word; 
+    hyphens: auto;              
+  }
 }
 
 /* --- img _includes/img.html --- */
@@ -119,17 +100,17 @@ h1 {
   color: $c-faint;
   }
 }
-/* --- FOOTER Styles --- _includes/footer.html*/
+/* --- FOOTER  --- _includes/footer.html*/
 
 .site-footer {
   text-align: center;
   padding: 1.25rem 0 1.75rem;
   a {
-  display: inline-flex;
-  align-items: center;
-  gap: .25rem;
-  text-decoration: none;
-  color:inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    text-decoration: none;
+    color:$c-muted;
   }
 }
 
@@ -145,4 +126,5 @@ h1 {
   font-size: $sm;
   color: $c-faint;
   opacity: 0.9;
+  a { color: inherit;}
 }
