@@ -4,7 +4,7 @@ layout: default
 {%- assign weekdays = "Chủ nhật,Thứ hai,Thứ ba,Thứ tư,Thứ năm,Thứ sáu,Thứ bảy" | split: "," -%}
 {%- assign d = page.date -%}
 {%- assign wday = d | date: "%w" | plus: 0 -%}
-<article class="post">
+<article>
   <h1>{{ page.title | escape }}</h1>
   <time datetime="{{ d | date_to_xmlschema }}">
     <p>{{- weekdays[wday] }}, {{ d | date: "%-d/%-m/%Y" -}}</p>

@@ -8,10 +8,6 @@ $c-faint: #888;
 $f: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 $sm:  15px;
 
-html {
-  overflow-y: scroll;
-}
-
 body {
   font-family: $f;
   margin: auto;
@@ -31,6 +27,8 @@ a {
 
   /* Hàng 1: Tên tiêu đề Blog */
 .title {
+  display: block;
+  width: fit-content;
   &:hover {
     text-decoration: none;
   }
@@ -63,21 +61,15 @@ time {
 h1 {
   font-weight: 600;   
   font-size: 2rem;
+  text-wrap: balance;
 }
 
-.post {
-  time {
+article time {
     font-size: $sm;
     flex: none;
   }
-  p {
-    text-align: justify;
-    text-justify: inter-word; 
-    hyphens: auto;              
-  }
-}
 
-/* --- img _includes/img.html --- */
+/* --- IMG _includes/img.html --- */
 .post-figure {
   margin: 1rem auto;
 
@@ -86,6 +78,7 @@ h1 {
   width: var(--w, 70%);
   max-width: 100%;
   height: auto;
+  aspect-ratio: var(--ar, auto);
   margin-inline: auto;
   }
 
@@ -98,7 +91,6 @@ h1 {
   }
 }
 /* --- FOOTER  --- _includes/footer.html*/
-
 .site-footer {
   text-align: center;
   padding: 1.25rem 0 1.75rem;
@@ -119,10 +111,9 @@ footer svg {
   flex: none;
 }
 
-/* Tối ưu phần Copyright */
+
 .footer-copyright {
   font-size: $sm;
   color: $c-faint;
-  opacity: 0.9;
   a { color: inherit;}
 }

@@ -1,11 +1,20 @@
-<figure class="post-figure" style="--w:{{ include.w | default: '70%' }}">
-  <img 
-    src="{{ include.url | relative_url }}" 
-    alt="" 
-    loading="lazy" 
+{%- assign w = include.w | default: '70%' -%}
+{%- assign loading = include.loading | default: 'lazy' -%}
+{%- capture style -%}--w:{{ w }}{% if include.ratio %};--ar:{{ include.ratio }}{% endif %}{%- endcapture -%}
+<figure class="post-figure" style="{{ style }}">
+  <img
+    src="{{ include.url | relative_url }}"
+    alt="{{ include.alt | default: include.cap | default: '' }}"
+    loading="{{ loading }}"
     decoding="async"
-  >
+    {% if loading == 'eager' %}fetchpriority="high"{% endif %}>
   {%- if include.cap -%}
     <figcaption>{{ include.cap }}</figcaption>
   {%- endif -%}
 </figure>
+<!-- {% include img.html 
+   url="/assets/images/sunset.jpg" 
+   cap="Hoàng hôn ở Đà Lạt" 
+   loading="eager" 
+   w="80%" 
+   ratio="3/2" %} -->
