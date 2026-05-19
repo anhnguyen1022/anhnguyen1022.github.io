@@ -8,6 +8,8 @@ $c-faint: #888;
 $f: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 $sm:  15px;
 
+html { scrollbar-gutter: stable; }
+
 body {
   font-family: $f;
   margin: auto;
@@ -51,7 +53,7 @@ nav a { margin-right: .5rem; }
 }
 
 time {
-    flex: 0 0 7rem; 
+    flex: 0 0 6.7rem; 
     color: $c-muted;
     font-variant-numeric: tabular-nums;
 }
