@@ -104,15 +104,14 @@ article time {
     text-decoration: none;
     color:$c-muted;
   }
-}
 
-footer svg {
-  width: 1em;
-  height: 1em;
-  fill: currentColor;
-  flex: none;
+  svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    flex: none;
+  }
 }
-
 
 .footer-copyright {
   font-size: $sm;
