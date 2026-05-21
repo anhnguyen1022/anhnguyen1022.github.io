@@ -31,9 +31,7 @@ a {
 .title {
   display: block;
   width: fit-content;
-  &:hover {
-    text-decoration: none;
-  }
+  &:hover { text-decoration: none; }
   h1 {
     font-weight: 700; 
     font-size: 1.5rem; 
@@ -42,7 +40,7 @@ a {
 }
 
 /* Hàng 2: Menu điều hướng (Nav) */
-nav a { margin-right: .5rem; }
+.navigation a { margin-right: .5rem; }
   
 /* --- Home & Post List Styles _layouts/home.html--- */
 .post-list {
@@ -91,6 +89,19 @@ article time {
   color: $c-faint;
   }
 }
+
+/* --- Pagination _layouts/home.html --- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: $c-faint;
+
+  a { color: inherit; }
+  .page-num { font-variant-numeric: tabular-nums; }
+}
+
 /* --- FOOTER  --- _includes/footer.html*/
 .site-footer {
   text-align: center;
