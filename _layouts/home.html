@@ -18,11 +18,11 @@ seo:
   {%- if paginator.total_pages > 1 -%}
   <nav class="pagination">
     {%- if paginator.previous_page -%}
-      <a href="{% if paginator.previous_page == 1 %}{{ '/' | relative_url }}{% else %}{{ paginator.previous_page_path | relative_url }}{% endif %}" rel="prev">←</a>
+      <a href="{% if paginator.previous_page == 1 %}{{ '/' | relative_url }}{% else %}{{ paginator.previous_page_path | relative_url }}{% endif %}" rel="prev">&larr;</a>
     {%- endif -%}
     <span class="page-num">{{ paginator.page }} / {{ paginator.total_pages }}</span>
     {%- if paginator.next_page -%}
-      <a href="{{ paginator.next_page_path | relative_url }}" rel="next">→</a>
+      <a href="{{ paginator.next_page_path | relative_url }}" rel="next">&rarr;</a>
     {%- endif -%}
   </nav>
   {%- endif -%}
