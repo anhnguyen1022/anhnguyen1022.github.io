@@ -1,9 +1,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'none';object-src 'none';base-uri 'none';frame-src 'none';form-action 'none';img-src 'self' data: https://i.ibb.co;style-src 'self' 'unsafe-inline';upgrade-insecure-requests">
-<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'none';object-src 'none';base-uri 'none';frame-src 'none';form-action 'none';img-src 'self' data: https://i.ibb.co;style-src 'self' 'unsafe-inline';frame-ancestors 'none'">
 <meta name="referrer" content="no-referrer">
-<meta name="robots" content="noindex,nofollow">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title }}</title>
+<link rel="icon" href="data:,">
 <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 </head>

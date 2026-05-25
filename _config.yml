@@ -6,19 +6,11 @@ github_username:  Ducanhnguyen1022
 
 
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
+ - .vscode/
   - Gemfile
   - Gemfile.lock
-  - node_modules/
-  - vendor/
   - README.md
   - LICENSE
-  - package.json
-  - package-lock.json
-  - yarn.lock
-  - .gitignore
   - .github/
 
 show_excerpts: false
@@ -47,5 +39,7 @@ sass:
 compress_html:
   clippings: all
   comments: all
+  endings: all
   blanklines: false
+  profile: false
 
