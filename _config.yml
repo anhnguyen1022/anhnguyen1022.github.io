@@ -6,7 +6,7 @@ github_username:  Ducanhnguyen1022
 
 
 exclude:
- - .vscode/
+  - .vscode/
   - Gemfile
   - Gemfile.lock
   - README.md
