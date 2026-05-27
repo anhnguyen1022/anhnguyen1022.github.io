@@ -6,10 +6,8 @@ layout: default
 {%- assign wday = d | date: "%w" | plus: 0 -%}
 <article>
   <h1>{{ page.title | escape }}</h1>
-  <p>
-    <time datetime="{{ d | date_to_xmlschema }}">
+  <time datetime="{{ d | date_to_xmlschema }}">
       {{- weekdays[wday] }}, {{ d | date: "%-d/%-m/%Y" -}}
-    </time>
-  </p>
+  </time>
   {{ content }}
 </article>

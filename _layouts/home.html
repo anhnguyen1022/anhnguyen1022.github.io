@@ -16,11 +16,11 @@ layout: default
   {%- if paginator.total_pages > 1 -%}
   <nav class="pagination">
     {%- if paginator.previous_page -%}
-      <a href="{% if paginator.previous_page == 1 %}{{ '/' | relative_url }}{% else %}{{ paginator.previous_page_path | relative_url }}{% endif %}">&larr;</a>
+      <a href="{% if paginator.previous_page == 1 %}{{ '/' | relative_url }}{% else %}{{ paginator.previous_page_path | relative_url }}{% endif %}">&#10092;</a>
     {%- endif -%}
     <span class="page-num">{{ paginator.page }} / {{ paginator.total_pages }}</span>
     {%- if paginator.next_page -%}
-      <a href="{{ paginator.next_page_path | relative_url }}">&rarr;</a>
+      <a href="{{ paginator.next_page_path | relative_url }}">&#10093;</a>
     {%- endif -%}
   </nav>
   {%- endif -%}

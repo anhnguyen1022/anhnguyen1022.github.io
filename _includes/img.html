@@ -1,4 +1,4 @@
-{%- assign w = include.w | default: '70%' -%}
+{%- assign w = include.w | default: '80%' -%}
 {%- assign loading = include.loading | default: 'lazy' -%}
 {%- capture style -%}--w:{{ w }}{% if include.ratio %};--ar:{{ include.ratio }}{% endif %}{%- endcapture -%}
 <figure class="post-figure" style="{{ style }}">
