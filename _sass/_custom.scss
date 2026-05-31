@@ -41,7 +41,6 @@ main { line-height: 1.75; }
 
 a {
   color: var(--c-link);
-  text-wrap: pretty;
   text-decoration: none;
   &:hover { text-decoration: underline; text-underline-offset: 4px;}
 }
@@ -74,6 +73,7 @@ header {
     list-style: none; 
     padding: 0;
     li {display: flex; }
+    a {text-wrap: pretty;}
 }
 
 time {
