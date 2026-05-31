@@ -41,6 +41,7 @@ main { line-height: 1.75; }
 
 a {
   color: var(--c-link);
+  text-wrap: pretty;
   text-decoration: none;
   &:hover { text-decoration: underline; text-underline-offset: 4px;}
 }
