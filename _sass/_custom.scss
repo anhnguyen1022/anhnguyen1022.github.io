@@ -71,9 +71,9 @@ header {
 /* --- Home & Post List Styles _layouts/home.html--- */
 .post-list {
     list-style: none; 
+    text-wrap: pretty;
     padding: 0;
     li {display: flex; }
-    a {text-wrap: pretty;}
 }
 
 time {
