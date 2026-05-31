@@ -1,0 +1,6 @@
+- name: Blog
+  link: /
+  active_layouts: [home]
+
+- name: About
+  link: /about/

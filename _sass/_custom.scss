@@ -42,7 +42,7 @@ main { line-height: 1.75; }
 a {
   color: var(--c-link);
   text-decoration: none;
-  &:hover { text-decoration: underline; }
+  &:hover { text-decoration: underline; text-underline-offset: 4px;}
 }
 
   /* Header — _includes/header.html */
@@ -61,7 +61,12 @@ header {
 }
 
 /* Hàng 2: Menu điều hướng (Nav) */
-.navigation a { margin-right: .5rem; }
+.navigation a { margin-right: 0.8rem; 
+  &.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
   
 /* --- Home & Post List Styles _layouts/home.html--- */
 .post-list {
