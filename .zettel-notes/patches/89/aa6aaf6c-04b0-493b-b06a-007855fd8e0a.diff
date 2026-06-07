@@ -1,8 +1,0 @@
---- old
-+++ new
-@@ -6,1 +6,1 @@
--Sau khi lấy áo dài nhà cô dâu, chúng tôi đi dọc trên con đường xi măng có hàng cây dừa, qua cây cầu nhỏ bắt qua con mương tới nhà thờ. Lần đầu tiên t bước vào trong nhà thờ và trải nghiệm lễ kết hôn bên đạo Công Giáo. Chú rể nói nhầm tên thánh cô dâu từ Maria thành Mario. Lễ kéo dài khoảng 1 tiếng.
-+Sau khi lấy áo dài nhà cô dâu, chúng tôi đi dọc trên con đường xi măng có hàng cây dừa, qua cây cầu nhỏ bắt qua con mương tới nhà thờ. Lần đầu tiên t bước vào trong nhà thờ và trải nghiệm nghi thức Thánh lễ Hôn Phối bên đạo Công Giáo. Chú rể nói nhầm tên thánh cô dâu từ Maria thành Mario. Lễ kéo dài khoảng 1 tiếng.
-@@ -9,0 +9,2 @@
-+</br>
-+{% include img.html url="https://i.ibb.co/9H3JfQpK/20260501-083855.jpg" cap="Chuẩn bị lễ trong nhà thờ" w="60%" %}

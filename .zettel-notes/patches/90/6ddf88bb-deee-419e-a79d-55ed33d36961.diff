@@ -1,8 +1,0 @@
---- old
-+++ new
-@@ -14,1 +14,1 @@
--<small><i><font color="#888">Cá tai tượng tại trạm dừng chân</font></i></small>
-+<small style="display: block; margin-top: -15px;"><i><font color="#888">Cá tai tượng tại trạm dừng chân</font></i></small>
-@@ -24,1 +24,1 @@
--<small><i><font color="#888">Chú rể</font></i></small>
-+<small style="display: block; margin-top: -15px;"><i><font color="#888">Chú rể</font></i></small>
