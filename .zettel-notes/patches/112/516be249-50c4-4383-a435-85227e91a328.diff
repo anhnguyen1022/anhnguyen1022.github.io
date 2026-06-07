@@ -1,0 +1,7 @@
+--- old
++++ new
+@@ -7,2 +7,2 @@
+-{% include img.html url="https://i.ibb.co/zTWNQfGn/c-u-bason.webp" loading="eager" w="70%" %}
+-{% include img.html url="https://i.ibb.co/KjXsg6BY/IMG-20260524-211907.jpg" w="90%" %}
++{{< img url="https://i.ibb.co/zTWNQfGn/c-u-bason.webp" loading="eager" w="70%" >}}
++{{< img url="https://i.ibb.co/KjXsg6BY/IMG-20260524-211907.jpg" w="90%" >}}

@@ -1,0 +1,5 @@
+--- old
++++ new
+@@ -10,1 +10,1 @@
+-{% include img.html url="https://i.ibb.co/9H3JfQpK/20260501-083855.jpg" cap="Chuẩn bị lễ trong nhà thờ" w="60%" %}
++{{< img  url="https://i.ibb.co/9H3JfQpK/20260501-083855.jpg" cap="Chuẩn bị lễ trong nhà thờ" w="60%" >}}

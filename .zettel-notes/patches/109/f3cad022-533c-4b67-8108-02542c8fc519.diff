@@ -1,0 +1,5 @@
+--- old
++++ new
+@@ -7,1 +7,1 @@
+-  {% include img.html url="https://i.ibb.co/dJLMgwn0/Thang-wedding.webp" cap="" loading="eager" w="75%" %}
++ {{< img url="https://i.ibb.co/dJLMgwn0/Thang-wedding.webp" cap="" loading="eager" w="75%" >}}
