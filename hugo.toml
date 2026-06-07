@@ -1,6 +1,5 @@
 baseURL = "https://anhnguyen1022.github.io/"
-title = "AnhNg's journal"
-languageCode = "vi"
+title = "AnhNg"
 defaultContentLanguage = "vi"
 timeZone = "Asia/Ho_Chi_Minh"
 enableEmoji = true
@@ -13,7 +12,7 @@ disableKinds = ["section", "taxonomy", "term", "RSS", "sitemap"]
 
 # Phân trang: 25 bài / trang (giống "paginate: 25" của Jekyll)
 [pagination]
-  pagerSize = 25
+  pagerSize = 50
 
 [params]
   github_username = "anhnguyen1022"

@@ -7,4 +7,4 @@ Sau khi lấy áo dài nhà cô dâu, chúng tôi đi dọc trên con đường 
 Cái giỏ quà nặng chịch, bê xong t mỏi nhừ hết hai cánh tay, không nhấc nổi đôi đũa. T phải nhờ tk bạn gắp đồ ăn dùm.
 15h45 tới trạm dừng chân Út Thẳng, còn khoảng 155km nữa về tới.
 <br>
-{% include img.html url="https://i.ibb.co/9H3JfQpK/20260501-083855.jpg" cap="Chuẩn bị lễ trong nhà thờ" w="60%" %}
+{{< img  url="https://i.ibb.co/9H3JfQpK/20260501-083855.jpg" cap="Chuẩn bị lễ trong nhà thờ" w="60%" >}}

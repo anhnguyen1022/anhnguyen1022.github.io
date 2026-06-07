@@ -1,6 +1,6 @@
-- name: Blog
+- name: Ghi chú
   link: /
   active_layouts: [home]
 
-- name: About
+- name: Giới thiệu
   link: /about/
