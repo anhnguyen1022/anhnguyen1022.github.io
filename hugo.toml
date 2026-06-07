@@ -1,0 +1,37 @@
+baseURL = "https://anhnguyen1022.github.io/"
+title = "AnhNg's journal"
+languageCode = "vi"
+defaultContentLanguage = "vi"
+timeZone = "Asia/Ho_Chi_Minh"
+enableEmoji = true
+
+# Không tạo các trang/feed không cần (giống bản Jekyll riêng tư cũ):
+# - section: bỏ trang /posts/ tự sinh
+# - taxonomy/term: không dùng tag/category
+# - RSS/sitemap: site đặt noindex nên không cần
+disableKinds = ["section", "taxonomy", "term", "RSS", "sitemap"]
+
+# Phân trang: 25 bài / trang (giống "paginate: 25" của Jekyll)
+[pagination]
+  pagerSize = 25
+
+[params]
+  github_username = "anhnguyen1022"
+
+# --- ĐIỂM MẤU CHỐT GIỮ QUY TRÌNH ZETTEL NOTES ---
+# Mount thư mục _posts (nơi app vẫn ghi file YYYY-MM-DD-tieu-de.md) vào content/posts.
+# Nhờ vậy bạn KHÔNG cần đổi cấu hình app: vẫn ghi vào _posts/ như cũ.
+# Lưu ý: khi đã khai báo mount cho "content", phải khai báo lại cả mount mặc định của content.
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "_posts"
+    target = "content/posts"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true        # cho phép HTML thô trong markdown (giống kramdown cũ)
+  [markup.highlight]
+    codeFences = false   # tắt tô màu cú pháp (tương đương "highlighter: none")

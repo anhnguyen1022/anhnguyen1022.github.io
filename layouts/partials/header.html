@@ -1,0 +1,13 @@
+<header>
+  <a class="title" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+  <nav class="navigation">
+    {{- $cur := .RelPermalink -}}
+    {{- range site.Data.navigation -}}
+      {{- $active := eq $cur (.link | relURL) -}}
+      {{- if and (not $active) $.IsHome .active_layouts -}}
+        {{- if in .active_layouts "home" -}}{{- $active = true -}}{{- end -}}
+      {{- end -}}
+      <a href="{{ .link | relURL }}"{{ if $active }} class="active"{{ end }}>{{ .name }}</a>
+    {{- end -}}
+  </nav>
+</header>

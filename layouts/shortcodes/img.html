@@ -1,0 +1,18 @@
+{{- $w := .Get "w" | default "80%" -}}
+{{- $loading := .Get "loading" | default "lazy" -}}
+{{- $ratio := .Get "ratio" -}}
+{{- $cap := .Get "cap" -}}
+{{- $alt := .Get "alt" | default $cap | default "" -}}
+{{- $style := printf "--w:%s" $w -}}
+{{- with $ratio }}{{ $style = printf "%s;--ar:%s" $style . }}{{ end -}}
+<figure class="post-figure" style="{{ $style | safeCSS }}">
+  <img
+    src="{{ .Get "url" | relURL }}"
+    alt="{{ $alt }}"
+    loading="{{ $loading }}"
+    decoding="async"{{ if eq $loading "eager" }}
+    fetchpriority="high"{{ end }}>
+  {{- with $cap }}<figcaption>{{ . }}</figcaption>{{ end -}}
+</figure>
+{{- /* Cú pháp dùng trong bài viết:
+     {{< img url="https://i.ibb.co/xxx/abc.png" cap="Chú thích" loading="eager" w="80%" ratio="3/2" >}} */ -}}
