@@ -1,4 +1,0 @@
---- old
-+++ new
-@@ -7,0 +7,1 @@
-+  {% include img.html url="https://i.ibb.co/dJLMgwn0/Thang-wedding.webp" cap="" loading="eager" w="75%" %}
