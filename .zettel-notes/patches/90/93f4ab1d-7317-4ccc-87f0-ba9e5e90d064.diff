@@ -1,0 +1,22 @@
+--- old
++++ new
+@@ -10,16 +10,3 @@
+-<div align="center">
+-<img src="https://i.ibb.co/GfDW4tRV/20260430-130011.jpg" alt="ca-tai-tuong" loading="lazy" style="width: 40%; height: auto; display: block; margin: 0 auto;">
+-<br>
+-<small style="display: block; margin-top: -15px;"><i><font color="#888">Cá tai tượng tại trạm dừng chân</font></i></small>
+-</div>
+-<br>
+-<div align="center">
+-<img src="https://i.ibb.co/JRYqW7h4/20260430-171106.jpg" alt="" loading="lazy" style="width: 60%; height: auto; display: block; margin: 0 auto;">
+-</div>
+-<br>
+-<div align="center">
+-<img src="https://i.ibb.co/YFhjwsyK/20260430-181855-0.jpg" alt="Chú rể" loading="lazy" style="width: 50%; height: auto; display: block; margin: 0 auto;">
+-<br>
+-<small style="display: block; margin-top: -15px;"><i><font color="#888">Chú rể</font></i></small>
+-</div>
+-
++{{< img url="https://i.ibb.co/GfDW4tRV/20260430-130011.jpg" loading="eager" w="60%" >}}
++{{< img url="https://i.ibb.co/JRYqW7h4/20260430-171106.jpg" loading="lazy" w="80%" >}}
++{{< img url="https://i.ibb.co/YFhjwsyK/20260430-181855-0.jpg" cap="Chú rể" loading="lazy" w="70%" >}}
