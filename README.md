@@ -68,6 +68,6 @@ Tạo một file ở gốc `content/`, vd `content/nhac.md`:
 
 ## Chèn ảnh trong bài
 
-    {{< img url="https://i.ibb.co/xxx/abc.webp" cap="Chú thích" w="80%" ratio="3/2" >}}
-
+ {{< img url="https://i.ibb.co/xxx/abc.webp" cap="Chú thích" loading="eager" w="80%" ratio="3/2" >}}
+     
 Nên nén ảnh sang WebP và luôn truyền `ratio` để trang không nhảy khi ảnh tải.

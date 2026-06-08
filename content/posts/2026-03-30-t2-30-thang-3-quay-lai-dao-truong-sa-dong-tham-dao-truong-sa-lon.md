@@ -8,10 +8,4 @@ Khoảng 6h45, thuyền nhổ neo, hướng về đảo Trường Sa Lớn.
 11h40, tàu thả neo sát bến tàu tại đảo Trường Sa lớn. Đi ra mạn tàu, kinh ngạc trước cảnh tượng trước mắt. Màu xanh cây cối bao phủ trên đảo. Những cơn sóng xanh từng đợt vô vào bờ, được giảm bớt độ lớn bởi hàng rào dựng bởi những viên đá 4 chân.
 14h30p, lên đảo tham quan. Làm lễ tưởng niệm tưởng đài liệt sĩ, đài tưởng niệm chủ tịch Hồ Chí Minh. Thắp hương tại chùa Trường Sa, chùa nằm bên kia so với đường băng sân bay nằm cắt dọc hòn đảo. Tham quan nhà truyền thống. Chụp hình với cột mốc chủ quyền.
 Khoảng 17h, tàu nhổ neo rời Trường Sa.  
-
-<div align="center">
-    <img src="https://i.ibb.co/CpLhvVyw/20260330-122003.jpg" alt="" loading="lazy" style="width: 70%; height: auto; display: block; margin: 0 auto;">
-    <br>
-    <small style="display: block; margin-top: -15px;"><i><font color="#888">Đảo Trường Sa lớn</font></i></small>
-</div>
-
+{{< img url="https://i.ibb.co/CpLhvVyw/20260330-122003.jpg" cap="Đảo Trường Sa lớn" loading="eager" w="90%" >}}
