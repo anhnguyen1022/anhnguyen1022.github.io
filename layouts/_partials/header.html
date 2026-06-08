@@ -1,0 +1,10 @@
+<header>
+  <a class="title" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+  <nav class="navigation">
+    {{- $cur := . -}}
+    {{- range site.Menus.main -}}
+      {{- $active := or ($cur.IsMenuCurrent .Menu .) ($cur.HasMenuCurrent .Menu .) -}}
+      <a href="{{ .URL }}"{{ if $active }} class="active"{{ end }}>{{ .Name }}</a>
+    {{- end -}}
+  </nav>
+</header>

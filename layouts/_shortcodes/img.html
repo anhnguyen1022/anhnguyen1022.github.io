@@ -14,5 +14,5 @@
     fetchpriority="high"{{ end }}>
   {{- with $cap }}<figcaption>{{ . }}</figcaption>{{ end -}}
 </figure>
-{{- /* Cú pháp dùng trong bài viết:
-     {{< img url="https://i.ibb.co/xxx/abc.png" cap="Chú thích" loading="eager" w="80%" ratio="3/2" >}} */ -}}
+{{- /* Cú pháp: {{< img url="https://i.ibb.co/xxx/abc.webp" cap="Chú thích" loading="eager" w="80%" ratio="3/2" >}}
+     Nên LUÔN truyền ratio để trang không bị nhảy khi ảnh tải. */ -}}

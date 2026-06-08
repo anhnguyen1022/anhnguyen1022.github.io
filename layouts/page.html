@@ -2,7 +2,9 @@
 {{- $vi := dict "Sunday" "Chủ nhật" "Monday" "Thứ hai" "Tuesday" "Thứ ba" "Wednesday" "Thứ tư" "Thursday" "Thứ năm" "Friday" "Thứ sáu" "Saturday" "Thứ bảy" -}}
 <article>
   <h1>{{ .Title }}</h1>
+  {{- if .Section -}}
   <time datetime="{{ .Date.Format "2006-01-02" }}">{{ index $vi (.Date.Format "Monday") }}, {{ .Date.Format "2/1/2006" }}</time>
+  {{- end -}}
   {{ .Content }}
 </article>
 {{ end }}

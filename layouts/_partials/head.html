@@ -1,11 +1,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+{{- if hugo.IsProduction -}}
 <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'none';object-src 'none';base-uri 'none';frame-src 'none';form-action 'none';img-src 'self' data: https://i.ibb.co;style-src 'self' 'unsafe-inline';frame-ancestors 'none'">
+{{- end -}}
 <meta name="referrer" content="no-referrer">
 <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
 <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}{{ site.Title }}</title>
 <link rel="icon" href="data:,">
+<link rel="preconnect" href="https://i.ibb.co">
 {{- $opts := dict "transpiler" "dartsass" "outputStyle" "compressed" -}}
 {{- with resources.Get "scss/main.scss" -}}
 {{- $css := . | css.Sass $opts | fingerprint -}}

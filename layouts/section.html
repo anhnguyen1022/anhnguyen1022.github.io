@@ -1,0 +1,4 @@
+{{ define "main" }}
+  {{- with .Content }}{{ . }}{{ end -}}
+  {{- partial "post-list.html" (dict "ctx" . "pages" .RegularPages) -}}
+{{ end }}

@@ -1,6 +1,0 @@
-- name: Ghi chú
-  link: /
-  active_layouts: [home]
-
-- name: Giới thiệu
-  link: /about/
