@@ -15,4 +15,7 @@ Sáng CN 4h15 t thức dậy lật đật chuẩn bị đồ đi qua chỗ tập
 {{< img url="https://i.ibb.co/twcmVFx7/IMG-20260628-185744.jpg" w="70%" >}}
 Sau đó chúng tôi đi bộ tới quán phở gà gần đó ăn sáng.
 {{< img url="https://i.ibb.co/jP2hrQHY/20260628-074956.jpg" w="50%" >}}
-Thú thật, t đã nghĩ tới chuyện rút lui, mà nghĩ lại, chính t là đứa đầu têu vụ chạy này, nên ráng cố thôi. Nghĩ lại hồi đó mới đi công tác ở đảo về, còn sung sức hehe. Cũng may là mọi thứ cũng ok, trừ chuyện mặc áo ngược chạy 10km ối trời ơi.
+Thú thật, t đã tính rút lui, mà nghĩ lại, chính t là đứa đầu têu vụ chạy này, nên ráng cố thôi. Nghĩ lại hồi đó mới đi công tác ở đảo về, còn sung sức hehe. Cũng may là mọi thứ cũng ok, trừ chuyện mặc áo ngược chạy 10km ối trời ơi.
+
+Đi bộ qua cầu Ba Son, nghỉ ngơi và trả phòng lúc 10h, rồi t đi metro về nhà.
+{{< img url="https://i.ibb.co/vxshLbrC/Race-Certificate.webp" w="50%" >}}
