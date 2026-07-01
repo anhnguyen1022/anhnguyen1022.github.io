@@ -167,3 +167,11 @@ time {
   color: var(--c-faint);
   a { color: inherit;}
 }
+
+.lang-toggle {
+  display: inline-block;
+  margin-left: 0.6rem;
+  font-size: $sm;
+  text-decoration: none;
+}
+.lang-toggle:hover { text-decoration: underline; text-underline-offset: 4px; }
